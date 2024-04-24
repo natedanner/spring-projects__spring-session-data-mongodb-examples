@@ -47,10 +47,12 @@ public class SessionAttributeForm {
 	@Override
 	public boolean equals(Object o) {
 
-		if (this == o)
+		if (this == o) {
 			return true;
-		if (!(o instanceof SessionAttributeForm))
+		}
+		if (!(o instanceof SessionAttributeForm)) {
 			return false;
+		}
 		SessionAttributeForm that = (SessionAttributeForm) o;
 		return Objects.equals(attributeName, that.attributeName) && Objects.equals(attributeValue, that.attributeValue);
 	}

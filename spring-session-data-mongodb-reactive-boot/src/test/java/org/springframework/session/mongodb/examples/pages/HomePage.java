@@ -35,7 +35,7 @@ import org.openqa.selenium.support.pagefactory.DefaultElementLocatorFactory;
  */
 public class HomePage {
 
-	private WebDriver driver;
+	private final WebDriver driver;
 
 	@FindBy(css = "form")
 	WebElement form;
